@@ -1,6 +1,7 @@
 # toonflix
 
 A new Flutter project.
+연습하는거임 중간부터 추가해서 파일 여러개 만들어서 다 기록하는건 못했는데 그냥 main에 푸쉬하면서 해볼거임
 
 ## Getting Started
 
