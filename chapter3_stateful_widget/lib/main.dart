@@ -12,11 +12,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  List<int> numbers = [];
+  bool showTitle = true;
 
-  void onClicked() {
+  void _toggleTitle() {
     setState(() {
-      numbers.add(numbers.length);
+      showTitle = !showTitle;
     });
   }
 
@@ -24,14 +24,20 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        textTheme: TextTheme(titleLarge: TextStyle(color: Colors.red)),
+        textTheme: const TextTheme(titleLarge: TextStyle(color: Colors.red)),
       ),
       home: Scaffold(
-        backgroundColor: Color(0xFFF4EDDB),
+        backgroundColor: const Color(0xFFF4EDDB),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [MyLargeTitle()],
+            children: [
+              showTitle ? const MyLargeTitle() : const Text('nothing'),
+              IconButton(
+                onPressed: _toggleTitle,
+                icon: const Icon(Icons.remove_red_eye),
+              ),
+            ],
           ),
         ),
       ),
@@ -39,8 +45,23 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-class MyLargeTitle extends StatelessWidget {
+class MyLargeTitle extends StatefulWidget {
   const MyLargeTitle({super.key});
+
+  @override
+  State<MyLargeTitle> createState() => _MyLargeTitleState();
+}
+
+class _MyLargeTitleState extends State<MyLargeTitle> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
