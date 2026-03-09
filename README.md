@@ -11,6 +11,10 @@ Therefore, this repository starts with Chapter
 Update:
 On March 9, 2026, I added Chapter 2 - UI Challenge, which was previously missing.
 
+## Updates
+
+- **March 9, 2026**: Added **Chapter 2 - UI Challenge**, which was previously missing.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
