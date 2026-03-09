@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+This Flutter project is for practicing the "UI Challenge" from the Nomad Coders course.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
