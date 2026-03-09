@@ -6,11 +6,7 @@ This Flutter project is for my practice.
 
 Normally, this project would have started from Chapter 1 (Hello Flutter), but I began saving my progress from Chapter 3 (StatefulWidget).
 
-Therefore, this reposi
-
-## Updates
-
-- **March 9, 2026**: Added **Chapter 2 - UI Challenge**, which was previously missing.
+Therefore, this repository starts with Chapter 3.
 
 ## Getting Started
 
